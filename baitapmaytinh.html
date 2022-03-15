@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Caculator</h2>
+    <form>
+        <input type="text" id="so_thu_nhat">
+        <input type="text" id="so_thu_hai"><br><br>
+        <button type="button" onclick="myFunction()">Addition(+)</button>
+        <button type="button" onclick="myFunction2()">Subtraction(-)</button>
+        <button type="button" onclick="myFunction3()">Multiplication(x)</button>
+        <button type="button" onclick="myFunction4()">Division(/)</button><br>
+    </form>
+    <p id="result">Result Division:</p>
+</body>
+<script>
+    function myFunction() {
+        let so_thu_nhat = +document.getElementById("so_thu_nhat").value;
+        let so_thu_hai = +document.getElementById("so_thu_hai").value;
+        let result = so_thu_nhat + so_thu_hai;
+        document.getElementById("result").innerHTML = "Result Division: " + result;
+    }
+    function myFunction2() {
+        let so_thu_nhat = document.getElementById("so_thu_nhat").value;
+        let so_thu_hai = document.getElementById("so_thu_hai").value;
+        let result = so_thu_nhat - so_thu_hai;
+        document.getElementById("result").innerHTML = "Result division: " + result;
+    }
+    function myFunction3() {
+        let so_thu_nhat = document.getElementById("so_thu_nhat").value;
+        let so_thu_hai = document.getElementById("so_thu_hai").value;
+        let result = so_thu_nhat * so_thu_hai;
+        document.getElementById("result").innerHTML = "Result division: " + result;
+    }
+    function myFunction4() {
+        let so_thu_nhat = document.getElementById("so_thu_nhat").value;
+        let so_thu_hai = document.getElementById("so_thu_hai").value;
+        let result = so_thu_nhat / so_thu_hai;
+        document.getElementById("result").innerHTML = "Result division: " + result;
+    }
+</script>
+
+</html>
